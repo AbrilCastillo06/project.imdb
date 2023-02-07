@@ -1,13 +1,15 @@
-import MovieTittle from './components/MovieTittle'
-import './App.css';
+import "./App.css";
+import MovieCard from "./components/MovieCard/MovieCard";
+import movies from './data/data.json'
 
 function App() {
   return (
     <div className="App">
       <div id="card">
-        <MoviTittle name={'Batman'}/>
-
-  </div>
+        {movies.map(
+          movie => (<MovieCard name={movie.Title} url={movie.Images[0]} number={movie.imdbRating} />))}
+       
+      </div>  
     </div>
   );
 }
