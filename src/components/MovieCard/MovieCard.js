@@ -4,9 +4,10 @@ import MovieRaiting from "..//MovieRaiting/MovieRaiting";
 import MovieBanner from "../MovieBanner/MovieBanner";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import "./movieCard.css"
 
 const MovieCard = ({url,name,number}) => {
-return <div>
+return <div class='container'>
     <MovieBanner url={url}/>
     <MovieRaiting number= {number} />
         <MovieTitle name={name} />

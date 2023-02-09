@@ -6,9 +6,11 @@ function App() {
   return (
     <div className="App">
       <div id="card">
+        <div className='movies'>
         {movies.map(
-          movie => (<MovieCard name={movie.Title} url={movie.Images[0]} number={movie.imdbRating} />))}
-       
+          movie => (<MovieCard name={movie.Title} url={movie.Images[0]} number={movie.imdbRating} />))
+          }
+       </div>
       </div>  
     </div>
   );
